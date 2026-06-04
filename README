@@ -1,0 +1,66 @@
+# Raipur Urban Heat Island Study
+### Hyperlocal thermal mapping of Raipur city using a 
+### ground-level sensor network and Landsat 9 NDVI analysis
+
+**Arnav Shekhar · Class 11 PCM · Bhavan's R.K. Sarda Vidya Mandir, Raipur**  
+**Mentored by Prof. Samir Bajpai, Department of Civil Engineering, NIT Raipur**
+
+---
+
+## What this project is
+
+Raipur is one of India's fastest-growing cities. Satellite studies 
+have established that the city as a whole is warming — but no 
+ground-level dataset exists that maps *where within Raipur* the 
+heat burden is highest, at street scale, and by how much.
+
+This study deploys a network of 8 DHT22 temperature and humidity 
+sensors across ecologically distinct urban zones in Raipur — 
+industrial, commercial, residential, and green/water areas — 
+logging continuous data at 10-minute intervals over a 3-month 
+period (July–September 2026). Sensor readings are correlated with 
+Landsat 9 satellite-derived NDVI (Normalised Difference Vegetation 
+Index) to quantify the relationship between vegetation cover and 
+near-surface air temperature at street level.
+
+The result is the first hyperlocal, ground-truth thermal map of 
+Raipur — data that no satellite can produce at this resolution.
+
+---
+
+## Research question
+
+*Which neighbourhoods of Raipur experience the most severe heat 
+burden, and does vegetation cover predict near-surface air 
+temperature at street level?*
+
+---
+
+## Sensor locations
+
+| Site | Location | Type |
+|------|----------|------|
+| S1 | Amanaka Industrial Area | Industrial |
+| S2 | Pandri Commercial Market | Dense commercial |
+| S3 | Shastri Chowk | Urban core |
+| S4 | VIP Road Corridor | Arterial / mixed |
+| S5 | Shankar Nagar | Mid-density residential |
+| S6 | Devendra Nagar | Low-density residential |
+| S7 | NIT Raipur Campus | Institutional / semi-green |
+| S8 | Telibandha Lake | Water body / urban green |
+
+---
+
+## Methods
+
+- **Hardware:** DHT22 sensors + Arduino Uno + SD card logging
+- **Sampling:** Every 10 minutes, continuous, July–September 2026
+- **Satellite data:** Landsat 9 OLI-2 Level-2 Surface Reflectance
+  (USGS EarthExplorer, <10% cloud cover, monthly)
+- **Analysis:** Python (pandas, rasterio, numpy, matplotlib, scipy)
+- **Validation:** Cross-referenced against NIT Raipur 
+  meteorological station data
+
+---
+
+## Repository structure
